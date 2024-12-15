@@ -1,0 +1,22 @@
+<div class="container">
+  <div class="row">
+    <!-- Document List Section -->
+    <div class="col-md-8">
+      <h2>Documents</h2>
+      <div class="list-group">
+        <!-- Each document is displayed as a link with routerLink to navigate to DocumentDetailComponent -->
+        <a 
+          *ngFor="let document of documents" 
+          class="list-group-item box-item"
+          [routerLink]="['/documents', document.id]"
+          routerLinkActive="active">
+          {{ document.name }}
+        </a>
+      </div>
+      
+      <!-- Add Document button for creating a new document -->
+      <button class="btn btn-success mt-3" [routerLink]="['/documents', 'new']">Add Document</button>
+    </div>
+  </div>
+</div>
+

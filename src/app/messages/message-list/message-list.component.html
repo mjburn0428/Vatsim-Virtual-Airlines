@@ -1,0 +1,15 @@
+<div class="container">
+  <h2>Messages</h2>
+  
+  <!-- Message List: Use ngFor to display each message item -->
+  <div class="message-list">
+    <app-message-item
+      *ngFor="let message of messages"
+      [message]="message">
+    </app-message-item>
+  </div>
+
+  <!-- Message Edit Component to add a new message -->
+  <app-message-edit></app-message-edit>
+</div>
+

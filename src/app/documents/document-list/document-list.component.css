@@ -1,0 +1,32 @@
+.box-item {
+  width: 150px; /* Fixed width for box shape */
+  height: 150px; /* Fixed height for box shape */
+  display: inline-block; /* Keep boxes inline */
+  vertical-align: top; /* Align boxes at the top */
+  border: 1px solid #ddd;
+  padding: 20px;
+  margin: 10px;
+  border-radius: 5px;
+  background-color: #fff; /* White background */
+  cursor: pointer;
+  transition: box-shadow 0.3s ease;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.box-item:hover {
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.15);
+}
+
+.box-item.active {
+  background-color: #f8f9fa; /* Light gray instead of blue */
+  color: black; /* Keep text color black */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Slightly stronger shadow */
+}
+
+.card {
+  margin-top: 20px;
+}
+
+.container {
+  margin-top: 20px;
+}
