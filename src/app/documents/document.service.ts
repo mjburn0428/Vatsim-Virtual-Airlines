@@ -11,7 +11,7 @@ export class DocumentService {
   documentSelectedEvent = new Subject<Document>();
   documentChangedEvent = new Subject<Document[]>();
   private maxDocumentId: number = 0;
-  private baseUrl = 'http://localhost:3000/documents'; // Update to use NodeJS backend
+  private baseUrl = 'http://localhost:3001/documents'; // Update to use NodeJS backend
 
   constructor(private http: HttpClient) {
     this.fetchDocuments(); // Fetch documents from NodeJS backend on initialization

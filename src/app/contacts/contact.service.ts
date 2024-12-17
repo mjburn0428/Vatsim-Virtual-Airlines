@@ -11,7 +11,7 @@ export class ContactService {
   contactSelectedEvent = new EventEmitter<Contact>();
   contactListChangedEvent = new Subject<Contact[]>();
   private maxContactId: number = 0;
-  private baseUrl = 'http://localhost:3000/contacts'; // NodeJS backend URL
+  private baseUrl = 'http://localhost:3001/contacts'; // NodeJS backend URL
 
   constructor(private http: HttpClient) {
     this.fetchContacts(); // Fetch contacts from the backend on initialization
