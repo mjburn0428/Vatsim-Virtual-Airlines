@@ -1,7 +1,7 @@
 <div class="panel panel-default">
   <div class="panel-heading">
     <div class="row">
-      <span class="title pad-left-right">Contacts</span>
+      <span class="title pad-left-right">Audit Managers</span>
     </div>
     <div class="row">
       <div class="input-group pull-left pad-left-right col-xs-7">
@@ -16,7 +16,7 @@
       </div>
     </div>
     <div class="pull-right pad-left-right">
-      <a class="btn btn-success" [routerLink]="['new']">New Contact</a>
+      <a class="btn btn-success" [routerLink]="['new']">New Audit Manager</a>
     </div>
   </div>
   
@@ -37,7 +37,7 @@
     </ul>
 
     <!-- Individuals Section -->
-    <h4>Individuals</h4>
+    <h4>Audit Managers</h4>
     <ul class="list-group" cdkDropList (cdkDropListDropped)="onDrop($event)">
       <li class="list-group-item" *ngFor="let individual of individuals | contactsFilter: term" cdkDrag [cdkDragData]="individual">
         <a [routerLink]="['/contacts', individual.id]" routerLinkActive="active">

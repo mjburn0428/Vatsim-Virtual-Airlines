@@ -1,281 +1,134 @@
-import {Contact} from './models/contact.model';
+import { Contact } from './models/contact.model';
 
 export const MOCKCONTACTS: Contact[] = [
-  // individual contacts
-  // index 0
   {
     id: '1',
-    name: 'Rex Barzee',
-    email: 'barzeer@byui.edu',
-    phone: '208-496-3768',
-    imageUrl: '../../assets/images/barzeer.jpg',
+    name: 'Jude Thompson',
+    email: 'j.thompson@vatsim.net',
+    phone: '555-0001',
+    imageUrl: '../../assets/images/thompsonj.jpg',
     group: null
   },
-  // index 1
   {
     id: '2',
-    name: 'Bradley Armstrong',
-    email: 'armstrongb@byui.edu',
-    phone: '208-496-3766',
-    imageUrl: '../../assets/images/armstrongb.jpg',
+    name: 'Janus Junkmann',
+    email: 'j.junkmann@vatsim.net',
+    phone: '555-0002',
+    imageUrl: '../../assets/images/junkmannj.jpg',
     group: null
   },
-  // index 2
   {
     id: '3',
-    name: 'Lee Barney',
-    email: 'barneyl@byui.edu',
-    phone: '208-496-3767',
-    imageUrl: '../../assets/images/barneyl.jpg',
+    name: 'Spiros Skotoris',
+    email: 's.skotoris@vatsim.net',
+    phone: '555-0003',
+    imageUrl: '../../assets/images/skotoriss.jpg',
     group: null
   },
-  // index 3
+  {
+    id: '4',
+    name: 'Jonah Klienman',
+    email: 'j.kleinman@vatsim.net',
+    phone: '555-0004',
+    imageUrl: '../../assets/images/kleinmanj.jpg',
+    group: null
+  },
   {
     id: '5',
-    name: 'Kory Godfrey',
-    email: 'godfreyko@byui.edu',
-    phone: '208-496-3770',
-    imageUrl: '../../assets/images/godfreyko.jpg',
+    name: 'Daniel Sirota',
+    email: 'd.sirota@vatsim.net',
+    phone: '555-0005',
+    imageUrl: '../../assets/images/sirotad.jpg',
     group: null
   },
-  // index 4
+  {
+    id: '6',
+    name: 'Justin Saunders',
+    email: 'j.saunders@vatsim.net',
+    phone: '555-0006',
+    imageUrl: '../../assets/images/saundersj.jpg',
+    group: null
+  },
   {
     id: '7',
-    name: 'R. Kent Jackson',
-    email: 'jacksonk@byui.edu',
-    phone: '208-496-3771',
-    imageUrl: '../../assets/images/jacksonk.jpg',
+    name: 'Lorenzo Vedana',
+    email: 'l.vedana@vatsim.net',
+    phone: '555-0007',
+    imageUrl: '../../assets/images/vedanal.jpg',
     group: null
   },
-  // index 5
   {
     id: '8',
-    name: 'Craig Lindstrom',
-    email: 'lindstromc@byui.edu',
-    phone: '208-496-3769',
-    imageUrl: '../../assets/images/lindstromc.jpg',
+    name: 'Michael Faustmann',
+    email: 'm.faustmann@vatsim.net',
+    phone: '555-0008',
+    imageUrl: '../../assets/images/faustmannm.jpg',
     group: null
   },
-  // index 6
   {
     id: '9',
-    name: 'Michael McLaughlin',
-    email: 'mclaughlinm@byui.edu',
-    phone: '208-496-3772',
-    imageUrl: '../../assets/images/mclaughlinm.jpg',
+    name: 'Keelan Daye',
+    email: 'k.daye@vatsim.net',
+    phone: '555-0009',
+    imageUrl: '../../assets/images/dayek.jpg',
     group: null
   },
-  // index 7
+  {
+    id: '10',
+    name: 'Jennifer Reed',
+    email: 'j.reed@vatsim.net',
+    phone: '555-0010',
+    imageUrl: '../../assets/images/reedj.jpg',
+    group: null
+  },
   {
     id: '11',
-    name: 'Brent Morring',
-    email: 'morringb@byui.edu',
-    phone: '208-496-3778',
-    imageUrl: '../../assets/images/morringb.jpg',
+    name: 'Seeley Harvey',
+    email: 's.harvey@vatsim.net',
+    phone: '555-0011',
+    imageUrl: '../../assets/images/harveys.jpg',
     group: null
   },
-  // index 8
   {
     id: '12',
-    name: 'Mark Olaveson',
-    email: 'olavesonm@byui.edu',
-    phone: '208-496-3773',
-    imageUrl: '../../assets/images/olavesonm.jpg',
+    name: 'Guillaume Fuentes',
+    email: 'g.fuentes@vatsim.net',
+    phone: '555-0012',
+    imageUrl: '../../assets/images/fuentesg.jpg',
     group: null
   },
-  // index 9
   {
     id: '13',
-    name: 'Steven Rigby',
-    email: 'rigbys@byui.edu',
-    phone: '208-496-3774',
-    imageUrl: '../../assets/images/rigbys.jpg',
+    name: 'Alex Bodle',
+    email: 'a.bodle@vatsim.net',
+    phone: '555-0013',
+    imageUrl: '../../assets/images/bodlea.jpg',
     group: null
   },
-  // index 10
+  {
+    id: '14',
+    name: 'Jelle Sleegers',
+    email: 'j.sleegers@vatsim.net',
+    phone: '555-0014',
+    imageUrl: '../../assets/images/sleegersj.jpg',
+    group: null
+  },
   {
     id: '15',
-    name: 'Blaine Robertson',
-    email: 'robertsonb@byui.edu',
-    phone: '208-496-3775',
-    imageUrl: '../../assets/images/robertsonb.jpg',
+    name: 'Shane Kaylen',
+    email: 's.kaylen@vatsim.net',
+    phone: '555-0015',
+    imageUrl: '../../assets/images/kaylens.jpg',
     group: null
   },
-  // index 11
   {
     id: '16',
-    name: 'Randy Somsen',
-    email: 'somsenr@byui.edu',
-    phone: '208-496-3776',
-    imageUrl: '../../assets/images/somsenr.jpg',
+    name: 'QuintenLee Morgan',
+    email: 'q.morgan@vatsim.net',
+    phone: '555-0016',
+    imageUrl: '../../assets/images/morganq.jpg',
     group: null
-  },
-  // index 12
-  {
-    id: '17',
-    name: 'Shane Thompson',
-    email: 'thompsonda@byui.edu',
-    phone: '208-496-3776',
-    imageUrl: '../../assets/images/thompsonda.jpg',
-    group: null
-  },
-
-  // teams
-  // index 13
-  {
-    id: '4', name: 'Network/OS team', email: ' ', phone: ' ', imageUrl: ' ', group: [
-    {
-      id: '2',
-      name: 'Bradley Armstrong',
-      email: 'armstrongb@byui.edu',
-      phone: '208-496-3766',
-      imageUrl: '../../assets/images/armstrongb.jpg',
-      group: null
-    },
-    {
-      id: '12',
-      name: 'Mark Olaveson',
-      email: 'olavesonm@byui.edu',
-      phone: '208-496-3773',
-      imageUrl: '../../assets/images/olavesonm.jpg',
-      group: null
-    },
-    {
-      id: '13',
-      name: 'Steven Rigby',
-      email: 'rigbys@byui.edu',
-      phone: '208-496-3774',
-      imageUrl: '../../assets/images/rigbys.jpg',
-      group: null
-    }
-  ]
-  },
-
-  // index 14
-  {
-    id: '6', name: 'Software Development team', email: ' ', phone: ' ', imageUrl: ' ', group: [
-    {
-      id: '1',
-      name: 'Rex Barzee',
-      email: 'barzeer@byui.edu',
-      phone: '208-496-3768',
-      imageUrl: '../../assets/images/barzeer.jpg',
-      group: null
-    },
-    {
-      id: '3',
-      name: 'Lee Barney',
-      email: 'barneyl@byui.edu',
-      phone: '208-496-3767',
-      imageUrl: '../../assets/images/barneyl.jpg',
-      group: null
-    },
-    {
-      id: '7',
-      name: 'R. Kent Jackson',
-      email: 'jacksonk@byui.edu',
-      phone: '208-496-3771',
-      imageUrl: '../../assets/images/jacksonk.jpg',
-      group: null
-    },
-    {
-      id: '12',
-      name: 'Mark Olaveson',
-      email: 'olavesonm@byui.edu',
-      phone: '208-496-3773',
-      imageUrl: '../../assets/images/olavesonm.jpg',
-      group: null
-    }
-  ]
-  },
-
-  // index 15
-  {
-    id: '10', name: 'Web Development team', email: ' ', phone: ' ', imageUrl: ' ', group: [
-    {
-      id: '15',
-      name: 'Blaine Robertson',
-      email: 'robertsonb@byui.edu',
-      phone: '208-496-3775',
-      imageUrl: '../../assets/images/robertsonb.jpg',
-      group: null
-    },
-    {
-      id: '16',
-      name: 'Randy Somsen',
-      email: 'somsenr@byui.edu',
-      phone: '208-496-3776',
-      imageUrl: '../../assets/images/somsenr.jpg',
-      group: null
-    },
-    {
-      id: '17',
-      name: 'Shane Thompson',
-      email: 'thompsonda@byui.edu',
-      phone: '208-496-3776',
-      imageUrl: '../../assets/images/thompsonda.jpg',
-      group: null
-    }
-  ]
-  },
-
-  // index 16
-  {
-    id: '14', name: 'Database team', email: ' ', phone: ' ', imageUrl: ' ', group: [
-    {
-      id: '7',
-      name: 'R. Kent Jackson',
-      email: 'jacksonk@byui.edu',
-      phone: '208-496-3771',
-      imageUrl: '../../assets/images/jacksonk.jpg',
-      group: null
-    },
-    {
-      id: '9',
-      name: 'Michael McLaughlin',
-      email: 'mclaughlinm@byui.edu',
-      phone: '208-496-3772',
-      imageUrl: '../../assets/images/mclaughlinm.jpg',
-      group: null
-    },
-    {
-      id: '11',
-      name: 'Brent Morring',
-      email: 'morringb@byui.edu',
-      phone: '208-496-3778',
-      imageUrl: '../../assets/images/morringb.jpg',
-      group: null
-    }
-  ]
-  },
-
-  // index 17
-  {
-    id: '18', name: 'Computer Security team', email: ' ', phone: ' ', imageUrl: ' ', group: [
-    {
-      id: '5',
-      name: 'Kory Godfrey',
-      email: 'godfreyko@byui.edu',
-      phone: '208-496-3770',
-      imageUrl: '../../assets/images/godfreyko.jpg',
-      group: null
-    },
-    {
-      id: '8',
-      name: 'Craig Lindstrom',
-      email: 'lindstromc@byui.edu',
-      phone: '208-496-3769',
-      imageUrl: '../../assets/images/lindstromc.jpg',
-      group: null
-    },
-    {
-      id: '13',
-      name: 'Steven Rigby',
-      email: 'rigbys@byui.edu',
-      phone: '208-496-3774',
-      imageUrl: '../../assets/images/rigbys.jpg',
-      group: null
-    }
-  ]
   }
 ];
+
+  

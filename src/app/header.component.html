@@ -1,7 +1,11 @@
 <nav class="navbar navbar-default">
   <div class="container-fluid">
     <div class="navbar-header">
-      <a class="navbar-brand" href="#">Vatsim Virtual Airlines Department</a>
+      <!-- Add your logo here -->
+      <a class="navbar-brand" href="#">
+        <img src="assets/images/logo.png" alt="Logo" class="logo" />
+        
+      </a>
     </div>
     <ul class="nav navbar-nav">
       <li routerLinkActive="active">
@@ -18,7 +22,14 @@
     <!-- Move User to the right as a dropdown -->
     <ul class="nav navbar-nav navbar-right">
       <li class="dropdown" appDropdown>
-        <a href="#" (click)="$event.preventDefault()" class="dropdown-toggle" role="button" aria-haspopup="true" aria-expanded="false">
+        <a
+          href="#"
+          (click)="$event.preventDefault()"
+          class="dropdown-toggle"
+          role="button"
+          aria-haspopup="true"
+          aria-expanded="false"
+        >
           User <span class="caret"></span>
         </a>
         <ul class="dropdown-menu">
@@ -30,4 +41,5 @@
     </ul>
   </div>
 </nav>
+
 

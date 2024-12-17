@@ -1,7 +1,8 @@
-.dropdown-menu {
-  display: none;
-}
-
-.open .dropdown-menu {
-  display: block;
+/* Style the logo inside the navbar */
+.navbar-brand .logo {
+  height: 90px;      /* Adjust the height of the logo */
+  width: auto;       /* Maintain aspect ratio */
+  display: inline-block;
+  margin-right: 10px; /* Add space between the logo and text */
+  vertical-align: middle; /* Align the logo with text */
 }
