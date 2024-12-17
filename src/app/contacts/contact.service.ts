@@ -1,7 +1,7 @@
 import { Injectable, EventEmitter } from '@angular/core';
 import { Contact } from './models/contact.model';
 import { HttpClient, HttpHeaders } from '@angular/common/http';
-import { Subject } from 'rxjs';
+import { Subject, Observable, of } from 'rxjs';
 
 @Injectable({
   providedIn: 'root',
@@ -43,9 +43,10 @@ export class ContactService {
     return this.contacts.slice();
   }
 
-  // Get a specific contact by ID
-  getContact(id: string): Contact | undefined {
-    return this.contacts.find((contact) => contact.id === id);
+  // Updated: Get a specific contact by ID as an Observable
+  getContact(id: string): Observable<Contact | undefined> {
+    const contact = this.contacts.find((contact) => contact.id === id);
+    return of(contact); // Wrap the result in an Observable
   }
 
   // Find the maximum ID in the current contacts
@@ -129,6 +130,7 @@ export class ContactService {
     }
   }
 }
+
 
 
 

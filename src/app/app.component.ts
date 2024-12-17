@@ -11,6 +11,8 @@ import { HttpClientModule } from '@angular/common/http';
   standalone: true,
   imports: [CommonModule, RouterModule, HeaderComponent, HttpClientModule]  // Add RouterModule here
 })
-export class AppComponent {}
+export class AppComponent {
+  title: any;
+}
 
 

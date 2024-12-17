@@ -11,7 +11,8 @@ import { RouterModule } from '@angular/router';  // Import RouterModule
   templateUrl: './documents.component.html',
   styleUrls: ['./documents.component.css'],
   standalone: true,
-  imports: [DocumentListComponent, DocumentDetailComponent, CommonModule, RouterModule]  // Add RouterModule here
+  imports: [DocumentListComponent, CommonModule, RouterModule] // Add RouterModule here
+  // Add RouterModule here
 })
 export class DocumentsComponent implements OnInit {
   selectedDocument!: Document;  

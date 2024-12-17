@@ -24,22 +24,29 @@ export class ContactDetailComponent implements OnInit {
   ) {}
 
   ngOnInit(): void {
+    // Fetch the contact based on the ID from the route parameters
     this.route.paramMap
       .pipe(
         switchMap(params => {
-          const id = params.get('id');
-          return id ? this.contactService.getContact(id) : of(undefined);
+          const id = params.get('id'); // Extract the contact ID
+          return id ? this.contactService.getContact(id) : of(undefined); // Return an observable
         })
       )
-      .subscribe(contact => {
-        this.contact = contact; // Update the current contact
+      .subscribe({
+        next: (contact: Contact | undefined) => {
+          this.contact = contact; // Assign the fetched contact
+        },
+        error: (err: any) => {
+          console.error('Error fetching contact:', err);
+        }
       });
   }
 
   onDelete(): void {
     if (this.contact) {
-      this.contactService.deleteContactById(this.contact.id); // Use deleteContactById for deleting by id
-      this.router.navigate(['/contacts']);
+      this.contactService.deleteContactById(this.contact.id); // Delete contact using its ID
+      this.router.navigate(['/contacts']); // Navigate back to the contacts list
     }
   }
 }
+
