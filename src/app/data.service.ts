@@ -6,7 +6,7 @@ import { Observable } from 'rxjs';
   providedIn: 'root'
 })
 export class DataService {
-  private baseUrl = 'https://jbcms-6023e-default-rtdb.firebaseio.com/'; // Replace with your Firebase URL
+  private baseUrl = 'https://virtual-airlines-4025b-default-rtdb.firebaseio.com/'; // Replace with your Firebase URL
 
   constructor(private http: HttpClient) {}
 

@@ -8,7 +8,7 @@ import { Message } from './models/message.model';
 export class MessageService {
   private messages: Message[] = [];
   messageChangedEvent = new EventEmitter<Message[]>(); // Event emitter for message changes
-  private baseUrl = 'http://localhost:3001/messages'; // NodeJS backend URL
+  private baseUrl = 'http://localhost:3000/messages'; // NodeJS backend URL
   private maxMessageId: number = 0;
 
   constructor(private http: HttpClient) {
